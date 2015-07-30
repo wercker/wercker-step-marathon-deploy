@@ -18,4 +18,4 @@ properties:
   instances:
     type: string
     required: true
-    default: 1
+    default: "1"
