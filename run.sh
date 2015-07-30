@@ -19,11 +19,11 @@ if [ -z $WERCKER_MARATHON_DEPLOY_APP_NAME ]; then
   fail "You must specify a valid app name"
 fi
 
-url -XDELETE -H "Content-type: application/json" $MARATHON_ENDPOINT/$WERCKER_MARATHON_DEPLOY_APP_NAME
+curl -XDELETE -H "Content-type: application/json" $MARATHON_ENDPOINT/$WERCKER_MARATHON_DEPLOY_APP_NAME
 
 info "deploying new version..."
 sleep 1
 
-curl -XPOST -H "Content-type: application/json" -d @$WERCKER_MARATHON_DEPLOY_JSON_FILE $MARATHON_ENDPOINT
+curl -XPOST -H "Content-type: application/json" -d @$WERCKER_MARATHON_DEPLOY_APP_JSON_FILE $MARATHON_ENDPOINT
 
 success "Deploy successful"
