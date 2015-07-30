@@ -4,7 +4,7 @@ if [ -z $WERCKER_MARATHON_DEPLOY_APP_JSON_FILE ]; then
   fail "You must specify a JSON file to deploy" 
 fi
 
-if [ -z $WERCKER_MARATHON_DEPLOY_APP_MARATHON_URL ]; then
+if [ -z $WERCKER_MARATHON_DEPLOY_MARATHON_URL ]; then
   fail "You must specify a valid marathon URL"
 fi
 
