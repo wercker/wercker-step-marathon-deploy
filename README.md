@@ -7,14 +7,16 @@ The following paramaters are available:
 * app-json-file (string, required)
 * instances (string, optional) 
 
-Note that while instances should be in fact a number, it is still neccessary to use quotes.
+Note that while `instances` should in fact be a number, it is still neccessary to use quotes.
 
 Example usage
 
 ```
-- wercker/marathon-deploy:
-    marathon-url: http://your-marathon-url.com
-    app-name: my-app
-    app-json-file: my-app.json
-    instances: "3"
+deploy:
+  steps:
+    - wercker/marathon-deploy:
+        marathon-url: http://your-marathon-url.com
+        app-name: my-app
+        app-json-file: my-app.json
+        instances: "3"
 ```
