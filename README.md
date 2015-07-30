@@ -13,8 +13,8 @@ Example usage
 
 ```
 - wercker/marathon-deploy:
-    marathon-url: $MARATHON_ENDPOINT
-    app-name: $APP_NAME
-    app-json-file: $APP_NAME.json
+    marathon-url: http://your-marathon-url.com
+    app-name: my-app
+    app-json-file: my-app.json
     instances: "3"
 ```
