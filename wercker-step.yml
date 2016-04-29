@@ -6,6 +6,9 @@ keywords:
   - mesosphere
   - mesos
 properties:
+  auth-token:
+    type: string
+    required: false
   marathon-url:
     type: string
     required: true
