@@ -1,5 +1,5 @@
 name: marathon-deploy 
-version: 0.1.5
+version: 0.1.6
 desription: A step to deploy json configuration files to a marathon instance 
 keywords:
   - marathon
