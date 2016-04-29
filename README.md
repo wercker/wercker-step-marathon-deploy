@@ -5,7 +5,8 @@ The following paramaters are available:
 * marathon-url (string, required)
 * app-name (string, required)
 * app-json-file (string, required)
-* instances (string, optional) 
+* instances (string, optional)
+* auth-token (string, optional)
 
 Note that while `instances` should in fact be a number, it is still neccessary to use quotes.
 
@@ -19,4 +20,5 @@ deploy:
         app-name: my-app
         app-json-file: my-app.json
         instances: "3"
+        auth-token: $AUTH_TOKEN
 ```
