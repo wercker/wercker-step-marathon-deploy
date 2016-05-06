@@ -1,4 +1,4 @@
-This step allows you to deploy a json file to a marathon instance.
+This step allows you to deploy a json file to a marathon instance. It requires `curl` to be installed on the container.
 
 The following paramaters are available:
 
