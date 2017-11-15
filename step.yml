@@ -1,0 +1,24 @@
+name: marathon-deploy 
+version: 1.0.0
+summary: A step to deploy json configuration files to a marathon instance 
+tags:
+  - marathon
+  - mesosphere
+  - mesos
+properties:
+- name: auth-token
+  type: string
+  required: false
+- name: marathon-url
+  type: string
+  required: true
+- name: app-name
+  type: string
+  required: true
+- name: app-json-file
+  type: string
+  required: true
+- name: instances
+  type: string
+  required: true
+  default: "1"
